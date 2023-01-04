@@ -1,8 +1,10 @@
 
-var CARDS = CARDS;
 
-let pessoas = [{nome:"Fernada"},{nome:"Fabiano"},{nome:"Fabricio"},{nome:"Ada"},{nome:"Fran"},{nome:"Bicudo"},{nome:"Maurina"},{nome:"Alline"},{nome:"jane"},
-{nome:"Albertino"},{nome:"Igor"},{nome:"Orlando"}]
+
+// let pessoas = [{nome:"Fernada"},{nome:"Fabiano"},{nome:"Fabricio"},{nome:"Ada"},{nome:"Fran"},{nome:"Bicudo"},{nome:"Maurina"},{nome:"Alline"},{nome:"jane"},
+// {nome:"Albertino"},{nome:"Igor"},{nome:"Orlando"}]
+
+let pessoas = [{nome:"Fernada"}]
 
 
 let imprimirLista = pessoas.map((pessoas,i) => 

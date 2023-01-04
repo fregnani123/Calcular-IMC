@@ -1,7 +1,7 @@
 
 var CARDS = CARDS;
 
-let pessoas = [{nome:"Fernada"},{nome:"Fabiano"},{nome:"Fabricio"},{nome:"Ada"},{nome:"Fran"},{nome:"Antonio"},{nome:"Maurina"},{nome:"Alline"},{nome:"jane"},
+let pessoas = [{nome:"Fernada"},{nome:"Fabiano"},{nome:"Fabricio"},{nome:"Ada"},{nome:"Fran"},{nome:"Bicudo"},{nome:"Maurina"},{nome:"Alline"},{nome:"jane"},
 {nome:"Albertino"},{nome:"Igor"},{nome:"Orlando"}]
 
 
@@ -11,7 +11,7 @@ let imprimirLista = pessoas.map((pessoas,i) =>
 
     var cards = document.createElement("div");
  
-    cards.classList.add('cards') 
+    cards.classList.add('cardsFront') 
 
     tabuleiro.appendChild(cards).innerHTML = pessoas.nome
   

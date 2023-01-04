@@ -12,18 +12,23 @@ body{
 }
 
 #tabuleiro{
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
   max-width: 700px;
   display: grid;
   grid-template: 1fr 1fr 1fr/1fr 1fr 1fr ;
   gap: 20px;
-
+  position: relative;
 }
 
-.cards {
- background-color: rgb(226, 1, 1);
+.cardsFront, .cardsBack  {
+ background-color: rgb(11, 3, 82);
  color: white; 
  width: 130px;
  height: 130px;
-
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 10px;
+ box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.356);
 }

@@ -1,24 +1,18 @@
 
 
+const nome = "Luiz Otario";
+const  sobrenome = "Miranda";
+const idade = 30;
+const peso= 84;
+const altura = 1.80;
 
-// let pessoas = [{nome:"Fernada"},{nome:"Fabiano"},{nome:"Fabricio"},{nome:"Ada"},{nome:"Fran"},{nome:"Bicudo"},{nome:"Maurina"},{nome:"Alline"},{nome:"jane"},
-// {nome:"Albertino"},{nome:"Igor"},{nome:"Orlando"}]
+let imc = Math.floor(peso / (altura * altura));
 
-let pessoas = [{nome:"Fernada"}]
+let anoNasmento = 2023 - idade;
 
-
-let imprimirLista = pessoas.map((pessoas,i) => 
-{
-    let tabuleiro = document.querySelector("#tabuleiro");
-
-    var cards = document.createElement("div");
- 
-    cards.classList.add('cardsFront') 
-
-    tabuleiro.appendChild(cards).innerHTML = pessoas.nome
-  
-} )
+ `${nome} ${sobrenome}, nascido no ano de ${anoNasmento} com a idade de ${idade} anos tem a taxa de IMC de ${imc}`
 
 
- 
+ let p = document.createElement("p")
+ let div = document.querySelector("#div").appendChild(p).innerHTML = `${nome} ${sobrenome}, nascido no ano de ${anoNasmento} com a idade de ${idade} anos tem a taxa de IMC de ${imc}`
 

@@ -1,16 +1,20 @@
 
+var CARDS = CARDS;
+
 let pessoas = [{nome:"Fernada"},{nome:"Fabiano"},{nome:"Fabricio"},{nome:"Ada"},{nome:"Fran"},{nome:"Antonio"},{nome:"Maurina"},{nome:"Alline"},{nome:"jane"},
-{nome:"Albertino"},{nome:"Igor"}]
+{nome:"Albertino"},{nome:"Igor"},{nome:"Orlando"}]
 
 
 let imprimirLista = pessoas.map((pessoas,i) => 
 {
-    let ul = document.querySelector("#ul");
+    let tabuleiro = document.querySelector("#tabuleiro");
 
-    var li = document.createElement("li");
-    ul.appendChild(li).innerHTML = pessoas.nome
+    var cards = document.createElement("div");
+ 
+    cards.classList.add('cards') 
+
+    tabuleiro.appendChild(cards).innerHTML = pessoas.nome
   
-    console.log(li) 
 } )
 
 

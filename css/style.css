@@ -1,8 +1,29 @@
-#ul {
-    list-style: none;
-    font-size: 20px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-li{
-    margin-top: 5px;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#tabuleiro{
+  background-color: black;
+  max-width: 700px;
+  display: grid;
+  grid-template: 1fr 1fr 1fr/1fr 1fr 1fr ;
+  gap: 20px;
+
+}
+
+.cards {
+ background-color: rgb(226, 1, 1);
+ color: white; 
+ width: 130px;
+ height: 130px;
+
 }

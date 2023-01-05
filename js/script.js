@@ -1,17 +1,23 @@
 
 
 
+let teste = "ola teste"
 
+   let form = document.querySelector(".form");
+   form.addEventListener("submit", (e) => {e.preventDefault();
 
-function enviarFormulario (){
-   let form = document.querySelector(".form")
-  
-   function previnerEventoForm (event){
-       event.preventDefault()
-   }
+    const inputPeso = e.target.querySelector(".peso");
+    const inputaltura = e.target.querySelector(".altura");
 
-   form.addEventListener("submit",previnerEventoForm,)
+    const peso = Number(inputPeso.value)
+    const altura = Number(inputaltura.value)
 
-}
+  console.log(altura, peso)
 
-enviarFormulario()
+})
+  function setResultado(msg) {
+    const res = document.querySelector(".res")
+    
+
+    res.innerHTML = msg
+  } 
